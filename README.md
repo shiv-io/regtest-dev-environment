@@ -37,6 +37,10 @@ Just the three of us?
 
 `getpeerinfo`
 
+Generate a wallet:
+
+`createwallet "testwallet"`
+
 How much money do we have?
 
 `getbalance`
@@ -45,7 +49,7 @@ Looks like we're broke. Anyone know why?
 
 Have there been any blocks mined? Without blocks we're all broke!
 
-`getblockchaininfo`
+`getblockchaininfo` or `getblockcount`
 
 First, we need to grab an address from someone to mine to:
 
