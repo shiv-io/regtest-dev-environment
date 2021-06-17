@@ -1,2 +1,4 @@
-alias alice-cli="bitcoin-cli -regtest -rpcuser=alice -rpcpassword=alice -rpcport=9334 -datadir=alice"
-alias bob-cli="bitcoin-cli -regtest -rpcuser=bob -rpcpassword=bob -rpcport=9333 -datadir=bob"
+#!/bin/bash
+. ~/.bashrc
+alias alice-cli="bc -regtest -rpcuser=YOUR_USER -rpcpassword=YOUR_PASSWORD -rpcport=9334 -datadir=/home/pi/regtest-nodes/alice"
+alias bob-cli="bc -regtest -rpcuser=YOUR_USER -rpcpassword=YOUR_PASSWORD -rpcport=9333 -datadir=/home/pi/regtest-nodes/bob"
