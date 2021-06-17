@@ -65,7 +65,7 @@ Now we're rich -- 50 bitcoins!
 
 Still 0. What happened? In bitcoin we have a 100 block maturity time for newly mined coinbase transactions ([explanation](https://en.bitcoin.it/wiki/Block_chain)
 
-Let's mine 100 more (to any address in our network) -- giving us 1 mature transaction
+Let's mine 100 more (to any address in our network) -- giving us 1 mature transaction (need >=101 blocks for maturity)
 
 `generatetoaddress 100 <address>`
 
@@ -81,7 +81,10 @@ We ran 3 nodes. The default regtest node now has 50 bitcoins, but Alice and Bob 
 
 To run bitcoin-cli commands _as alice_, you can `source aliases.sh`, which will create `alice-cli` and `bob-cli` terminal aliases that run `bitcoin-cli` commands with the correct parameters for Bob and Alice.
 
-`alice-cli getbalance`
+```
+alice-cli createwallet "alicewallet"  # Need to create a wallet first
+alice-cli getbalance
+```
 
 Alice is broke as expected
 
